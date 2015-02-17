@@ -1,4 +1,5 @@
 curl 'https://www.eeb.ucla.edu/seminars.php?id=[001-800]' > 1.html
+curl -L https://www.dropbox.com/s/u70dtrdr35p5tgk/seminars.tar.gz | tar zxv > eeb.html
 history
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(open("eeb.html"))
